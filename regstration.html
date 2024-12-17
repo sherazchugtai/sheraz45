@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Login/Signup</title>
+  <link rel="stylesheet" href="Log.css">
+</head>
+<body>
+  <div class="main-content">
+    <h1>Welcome to My Website</h1>
+    <button id="loginBtn">Sign In</button>
+  </div>
+
+  <!-- Login/Signup Popup -->
+  <div class="popup" id="loginPopup">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+
+      <!-- Login Form -->
+      <div id="loginForm">
+        <h2>Login</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="signupForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <form>
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email" required>
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" placeholder="Enter your password" required>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="sign.js"></script>
+</body>
+</html>
